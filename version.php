@@ -18,4 +18,4 @@ $plugin->requires  = 2011120100; // Requires this Moodle version
 //Note that if you change the version requirement to lower than 2.2, it is at your own risk!
 $plugin->maturity = MATURITY_RC;
 $plugin->release = '1.1 (Build: 2012062401 - RELEASE CANDIDATE)';
-$plugin->component = 'theme_strawberry'; // Full name of the plugin (used for diagnostics)
+$plugin->component = 'theme_greenie'; // Full name of the plugin (used for diagnostics)

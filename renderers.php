@@ -1,6 +1,6 @@
 <?php
  
-class theme_strawberry_core_renderer extends core_renderer {
+class theme_greenie_core_renderer extends core_renderer {
 
 // --- Start of custom menu modifications --- //
  

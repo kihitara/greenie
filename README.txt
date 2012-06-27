@@ -2,7 +2,7 @@
 ******************* Greenie *********************
 *************************************************
 
-Strawberry is a fixed-width, two column theme
+Greenie is a fixed-width, two column theme
 for Moodle 2.
 
 It has a basic settings page with the following
@@ -29,31 +29,31 @@ some limitations:
 
 If you downloaded from Moodle.org
 - Unzip the compressed file
-- Copy the strawberry folder into your Moodle
+- Copy the greenie folder into your Moodle
   theme directory.
 - Log into your Moodle site as administrator and
   go to the Site admin > Notification page to
-  install the Strawberry plugin.
+  install the Greenie plugin.
   
 If you downloaded from github
 - Unzip the compressed file
-- Rename 'kihitara-moodle-theme_strawberry-NUMBERS'
-  folder to 'strawberry'
-- Copy the strawberry folder into your Moodle
+- Rename 'kihitara-moodle-theme_greenie-NUMBERS'
+  folder to 'greenie'
+- Copy the greenie folder into your Moodle
   theme directory.
 - Log into your Moodle site as administrator and
   go to the Site admin > Notification page to
-  install the Strawberry plugin.
+  install the Greenie plugin.
 
 ****************** Change log *******************
 27/06/12
 - Testing github integration with PhpStorm.
 
 24/06/12
-- Strawberry is ready for release into the wild
+- Greenie is ready for release into the wild
 
 23/06/12
-- Strawberry theme was born
+- Greenie theme was born
 
 18/06/12
 - Added README file

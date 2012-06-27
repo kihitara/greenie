@@ -1,20 +1,20 @@
 <?php
 
-function strawberry_process_css($css, $theme) {
+function greenie_process_css($css, $theme) {
  
     if (!empty($theme->settings->themecolor)) {
         $themecolor = $theme->settings->themecolor;
     } else {
         $themecolor = null;
     }
-    $css = strawberry_set_themecolor($css, $themecolor);
+    $css = greenie_set_themecolor($css, $themecolor);
  
     if (!empty($theme->settings->customcss)) {
         $customcss = $theme->settings->customcss;
     } else {
         $customcss = null;
     }
-    $css = strawberry_set_customcss($css, $customcss);
+    $css = greenie_set_customcss($css, $customcss);
  
     return $css;
 }
@@ -26,7 +26,7 @@ function strawberry_process_css($css, $theme) {
  * @param mixed $themecolor
  * @return string
  */
-function strawberry_set_themecolor($css, $themecolor) {
+function greenie_set_themecolor($css, $themecolor) {
     $tag = '[[setting:themecolor]]';
     $replacement = $themecolor;
     if (is_null($replacement)) {
@@ -43,7 +43,7 @@ function strawberry_set_themecolor($css, $themecolor) {
  * @param mixed $customcss
  * @return string
  */
-function strawberry_set_customcss($css, $customcss) {
+function greenie_set_customcss($css, $customcss) {
     $tag = '[[setting:customcss]]';
     $replacement = $customcss;
     if (is_null($replacement)) {

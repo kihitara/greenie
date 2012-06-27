@@ -2,7 +2,7 @@
 
 // Name of the theme's folder
 
-$THEME->name = 'strawberry';
+$THEME->name = 'greenie';
 
 // Parent style sheets
 
@@ -22,7 +22,7 @@ $THEME->enable_dock = true;
 
 // CSS Post Process
 
-$THEME->csspostprocess = 'strawberry_process_css';
+$THEME->csspostprocess = 'greenie_process_css';
 
 // Custom renderer factory
 
