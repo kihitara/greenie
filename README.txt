@@ -46,6 +46,9 @@ If you downloaded from github
   install the Greenie plugin.
 
 ****************** Change log *******************
+02/07/12
+- Blocks fixed for Moodle 2.3
+
 27/06/12
 - Testing github integration with PhpStorm.
 
