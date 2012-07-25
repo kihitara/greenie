@@ -18,6 +18,10 @@
     height: 62px;
 }
 
+#region-post-box {
+    height: 100%;
+}
+
 /* ---------------- Blocks ---------------- */
 
 /** Override the region width **/

@@ -1,9 +1,14 @@
 #custommenu {
     border: none !important;
     position: absolute;
-    top: 140px;
-    width: 600px;
+    top: 50px;
+    right: 8%;
+    max-width: 700px;
     max-height: 55px;
+}
+
+#custommenu .yui3-menuitem-active {
+    background-color: transparent;
 }
 
 .yui3-skin-sam .yui3-menu-content,
@@ -12,21 +17,36 @@
 .yui3-skin-sam .yui3-menu-horizontal .yui3-menuitem-content {
     border: none !important;
     text-align: center;
-    color: #FFFFFF;
+    color: #000000;
 }
-
 
 #custommenu .yui3-menu-horizontal .yui3-menu-label,
 #custommenu .yui3-menu-horizontal .yui3-menuitem {
     border: none;
-    background-image: url([[pix:theme|menu_right]]);
+    background-image: none;
     background-position: top left;
     background-repeat: repeat-x;
-    height: 60px;
+    height: 43px;
+    min-width: 125px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-left: 5px;
+}
 
+#custommenu .yui3-menu-horizontal li.yui3-menuitem {
+    text-align: center;
+}
+
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label,
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menuitem-content {
+    float: none;
+}
+
+#custommenu .yui3-menu-horizontal .yui3-menu-label-active,
+#custommenu .yui3-menu-horizontal .yui3-menuitem-active {
+    background-image: url([[pix:theme|menu_hover]]);
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 
 #custommenu .yui3-menu .custom_menu_submenu .yui3-menuitem,
@@ -54,13 +74,13 @@
 #custommenu .yui3-menu .custom_menu_submenu .yui3-menu-label-menuvisible,
 #custommenu .yui3-menu .custom_menu_submenu .yui3-menu-label-menuvisible .yui3-menu-label-active,
 #custommenu .yui3-menu .yui3-menu .yui3-menu-label-active {
-    background-color: [[setting:themecolor]];
+    background-color: #94ea00;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 
 .yui3-skin-sam .yui3-menu .custom_menu_submenu .yui3-menu-content {
-    border: 1px solid [[setting:themecolor]] !important;
+    border: 1px solid #2f4900 !important;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -82,8 +102,7 @@
 .yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label-menuvisible,
 .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-label-active,
 .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-label-menuvisible {
-    /* background-color: [[setting:themecolor]]; */
-    color: #FFFFFF !important;
+    color: #000000 !important;
 }
 
 /* second level deep and beyond */

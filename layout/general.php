@@ -65,12 +65,12 @@ echo $OUTPUT->doctype() ?>
 </head>
 <body id="<?php p($PAGE->bodyid) ?>" class="<?php p($PAGE->bodyclasses.' '.join(' ', $bodyclasses)) ?>">
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
-<div class="toplogin"><?php echo $OUTPUT->login_info(); ?></div>
 <div id="page">
 	<div id="wrapper" class="clearfix">
 <?php if ($hasheading || $hasnavbar) { ?>
 
     <div id="page-header" class="clearfix">
+        <div class="toplogin"><?php echo $OUTPUT->login_info(); ?></div>
 	<?php
 	    if (($PAGE->theme->settings->texttitle)==1) {
 		echo '<div class="maintitle">'.$maintitle.'</div>';

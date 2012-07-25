@@ -14,29 +14,31 @@ body {
     color: #525252;
     padding: 0;
     margin: 0;
-    background-color:#444444;
-    background-image: url([[pix:theme|bg]])
+    background-color:#A0C73F;
 }
 
 /** Background colour of the central part where all content is **/
 #wrapper {
     padding: 0;
     border: none;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 0px;
     margin-bottom: 15px;
-    width: 840px;
+    width: 100%;
     background-color: transparent;
 }
 
 #page-content {
-    min-width: 840px;
+    width: 90%;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: -40px;
+    min-width: 1000px;
 }
 
 #page-content .region-content {
     overflow: hidden;
     padding: 5px;
+    padding-top: 20px;
     background-color: transparent;
 }
 
@@ -72,15 +74,18 @@ ol, ul, dl {
 
 #page-header {
     position:relative;
-    background-color: #FFFFFF;
+    background-color: transparent;
     background-image: url([[pix:theme|header]]);
-    background-position: top right;
+    background-position: top center;
     background-repeat: no-repeat;
-    height: 216px;
+    height: 265px;
+    z-index: 8000;
     }
 
 #page-header .sitelogo {
     float:left;
+    padding-top: 60px;
+    padding-left: 15%;
     }
     
 #page-header .langmenu {
@@ -92,8 +97,8 @@ ol, ul, dl {
 #page-header .maintitle {
     width: 340px;
     max-height: 90px;
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 15%;
+    padding-top: 60px;
     padding-right: 10px;
     padding-bottom: 0;
     text-transform: uppercase;
@@ -105,7 +110,7 @@ ol, ul, dl {
 
 #page-header .mainsubtitle {
     width: 340px;
-    padding-left: 10px;
+    padding-left: 15%;
     padding-top: 0;
     padding-right: 10px;
     padding-bottom: 0;
@@ -153,10 +158,11 @@ ol, ul, dl {
 
 /* Login info at the top */
 .toplogin {
-    width: 840px;
+    max-width: 500px;
     text-align: right;
-    margin-right: auto;
-    margin-left: auto;
+    position: absolute;
+    top: 0;
+    right: 10px;
     padding-top: 2px;
 }
 
