@@ -10,14 +10,6 @@
     background-color: #d5e6bc;
 }
 
-.side-post-top {
-    background-image: url([[pix:theme|right_top]]);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-color: #FFFFFF;
-    height: 62px;
-}
-
 #region-post-box {
     height: 100%;
 }

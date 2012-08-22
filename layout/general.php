@@ -5,8 +5,6 @@ $hasnavbar = (empty($PAGE->layout_options['nonavbar']) && $PAGE->has_navbar());
 $hasfooter = (empty($PAGE->layout_options['nofooter']));
 $hassidepre = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-pre', $OUTPUT));
 $hassidepost = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-post', $OUTPUT));
-// $hastopblocks = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('block-top-left', $OUTPUT) or $PAGE->blocks->region_has_content('block-top-mid', $OUTPUT) or  $PAGE->blocks->region_has_content('block-top-right', $OUTPUT));
-// $hasbtmblocks = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('block-btm-left', $OUTPUT) or $PAGE->blocks->region_has_content('block-btm-mid', $OUTPUT) or  $PAGE->blocks->region_has_content('block-btm-right', $OUTPUT));
 
 $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
 $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
@@ -35,7 +33,7 @@ if (!empty($PAGE->theme->settings->logo)) {
 if (!empty($PAGE->theme->settings->maintitle)) {
     $maintitle = $PAGE->theme->settings->maintitle;
 } else {
-    $maintitle = 'Strawberry Theme';
+    $maintitle = 'Greenie Theme';
 }
 
 if (!empty($PAGE->theme->settings->maintitle)) {
@@ -69,6 +67,7 @@ echo $OUTPUT->doctype() ?>
 	<div id="wrapper" class="clearfix">
 <?php if ($hasheading || $hasnavbar) { ?>
 
+
     <div id="page-header" class="clearfix">
         <div class="toplogin"><?php echo $OUTPUT->login_info(); ?></div>
 	<?php
@@ -85,7 +84,8 @@ echo $OUTPUT->doctype() ?>
 	?>
 
 	        <?php if ($hasheading) { ?>
-		
+        <div id="headerwrapper">
+
 		    	<h1 class="headermain"><!-- Leave this here --></h1>
     		    <div class="headermenu">
         			<?php
@@ -104,40 +104,12 @@ echo $OUTPUT->doctype() ?>
     <?php if ($hasnavbar) { ?>
 	    <div class="navbar clearfix">
     	    <div class="breadcrumb"><?php echo $OUTPUT->navbar(); ?></div>
-      </div>
+        </div>
+        <div class="navbutton"> <?php echo $PAGE->button; ?></div>
     <?php } ?>
 
     </div>
-
-    <!-- The three blocks added to the top of the page -->
-    <?php // if ($hastopblocks) { ?>
-    <!--
-		    <div id="topblockwrap">
-		    <div class="top-blocks">
-		    <div id="blocktopleft" class="block-region">
-		    <div class="region-content">
-                        <?php // echo $OUTPUT->blocks_for_region('block-top-left') ?>
-                    </div>
-		    </div>
-		    </div>
-		    <div class="top-blocks">
-		    <div id="blocktopmid" class="block-region">
-		    <div class="region-content">
-                        <?php // echo $OUTPUT->blocks_for_region('block-top-mid') ?>
-                    </div>
-		    </div>
-		    </div>
-		    <div class="top-blocks">
-		    <div id="blocktopright" class="block-region">
-		    <div class="region-content">
-                        <?php // echo $OUTPUT->blocks_for_region('block-top-right') ?>
-                    </div>
-		    </div>
-		    </div>
-		    </div>
-    -->
-    <?php // } ?>
-    <!-- End top of page blocks -->
+        </div>
 
 <?php } ?>
 
@@ -166,9 +138,6 @@ echo $OUTPUT->doctype() ?>
 
                 <?php if ($hassidepost) { ?>
                 <div id="region-post" class="block-region">
-		    <div class="side-post-top">
-			<div class="navbutton"> <?php echo $PAGE->button; ?></div>
-		    </div>
                     <div class="region-content">
                         <?php echo $OUTPUT->blocks_for_region('side-post') ?>
                     </div>
@@ -179,36 +148,6 @@ echo $OUTPUT->doctype() ?>
         </div>
     </div>
 </div>
-
-    <!-- The three blocks added to the bottom of the page -->
-    <?php // if ($hasbtmblocks) { ?>
-    <!--
-		    <div id="btmblockwrap">
-		    <div class="btm-blocks">
-		    <div id="blockbtmleft" class="block-region">
-		    <div class="region-content">
-                        <?php // echo $OUTPUT->blocks_for_region('block-btm-left') ?>
-                    </div>
-		    </div>
-		    </div>
-		    <div class="btm-blocks">
-		    <div id="blockbtmmid" class="block-region">
-		    <div class="region-content">
-                        <?php // echo $OUTPUT->blocks_for_region('block-btm-mid') ?>
-                    </div>
-		    </div>
-		    </div>
-		    <div class="btm-blocks">
-		    <div id="blockbtmright" class="block-region">
-		    <div class="region-content">
-                        <?php // echo $OUTPUT->blocks_for_region('block-btm-right') ?>
-                    </div>
-		    </div>
-		    </div>
-		    </div>
-    -->
-    <?php // } ?>
-    <!-- End bottom of page blocks -->
 
     </div>
 

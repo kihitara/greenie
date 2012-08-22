@@ -46,6 +46,9 @@ If you downloaded from github
   install the Greenie plugin.
 
 ****************** Change log *******************
+22/08/12
+- More development
+
 02/07/12
 - Blocks fixed for Moodle 2.3
 

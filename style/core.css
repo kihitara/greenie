@@ -38,7 +38,7 @@ body {
 #page-content .region-content {
     overflow: hidden;
     padding: 5px;
-    padding-top: 20px;
+    padding-top: 30px;
     background-color: transparent;
 }
 
@@ -71,6 +71,12 @@ ol, ul, dl {
 
 /* Logo at top of page */
 /* The logo is controlled by the settings page */
+
+#headerwrapper {
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 #page-header {
     position:relative;
@@ -106,6 +112,7 @@ ol, ul, dl {
     font-family: "Times New Roman";
     font-weight: bolder;
     overflow: hidden;
+    color: #FFFFFF;
 }
 
 #page-header .mainsubtitle {
@@ -124,8 +131,8 @@ ol, ul, dl {
 #page-header .autotitle {
     width: 340px;
     max-height: 120px;
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 15%;
+    padding-top: 60px;
     padding-right: 10px;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -140,8 +147,8 @@ ol, ul, dl {
 .navbar {
     position: absolute;
     top: 200px;
-    left: 10px;
-    width: 600px;
+    left: 75px;
+    width: auto;
     height: 20px;
     overflow: hidden;
 }
@@ -235,11 +242,10 @@ ol, ul, dl {
 }
 
 .navbutton {
-    float: none;
+    position: absolute;
+    top: 185px;
+    right: 120px;
     width: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 20px;
     text-align: center;
 }
 
