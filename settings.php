@@ -68,7 +68,7 @@ $settings->add($setting);
 // Custom CSS file
 $name = 'theme_greenie/customcss';
 $title = get_string('customcss','theme_greenie');
-$description = get_string('customcssdesc', 'theme_aerie');
+$description = get_string('customcssdesc', 'theme_greenie');
 $setting = new admin_setting_configtextarea($name, $title, $description, '');
 $settings->add($setting);
 

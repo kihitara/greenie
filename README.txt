@@ -46,6 +46,9 @@ If you downloaded from github
   install the Greenie plugin.
 
 ****************** Change log *******************
+28/08/12
+- Fixed [[customcssdesc]] display error.
+
 22/08/12
 - More development
 
